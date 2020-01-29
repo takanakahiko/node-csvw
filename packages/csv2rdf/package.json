@@ -1,0 +1,26 @@
+{
+  "name": "csv2rdf",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "takanakahiko <takanakahiko@gmail.com>",
+  "homepage": "https://github.com/takanakahiko/node-csvw#readme",
+  "license": "MIT",
+  "main": "lib/csv2rdf.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takanakahiko/node-csvw.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/takanakahiko/node-csvw/issues"
+  }
+}
