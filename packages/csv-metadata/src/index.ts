@@ -29,6 +29,9 @@ interface Table extends InheritedProperties{
     suppressOutpu?: boolean
     tableDirection?: TableDirection
     tableSchema?: Schema
+    transformations?: TransformationDefinition
+    "@id"?: LinkProperty
+    "@type"?: AtomicProperty
 }
 
 interface Schema extends InheritedProperties{
