@@ -6,15 +6,15 @@
     "test": "mocha -r ts-node/register packages/**/__tests__/**/*.spec.ts"
   },
   "devDependencies": {
-    "@types/chai": "^4.2.8",
-    "@types/node": "^13.5.2",
-    "chai": "^4.2.0",
+    "@types/chai": "4.2.8",
+    "@types/node": "13.5.2",
+    "chai": "4.2.0",
     "lerna": "3.20.2",
-    "mocha": "^7.0.1",
-    "ts-node": "^8.6.2",
-    "typescript": "^3.7.5"
+    "mocha": "7.0.1",
+    "ts-node": "8.6.2",
+    "typescript": "3.7.5"
   },
   "dependencies": {
-    "@types/mocha": "^7.0.1"
+    "@types/mocha": "7.0.1"
   }
 }
