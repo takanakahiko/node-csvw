@@ -1,0 +1,241 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": false,
+    "definitions": {
+        "ColumnDescription": {
+            "additionalProperties": false,
+            "properties": {
+                "@id": {
+                },
+                "@type": {
+                },
+                "aboutUrl": {
+                },
+                "datatype": {
+                },
+                "default": {
+                },
+                "lang": {
+                },
+                "name": {
+                },
+                "note": {
+                },
+                "null": {
+                },
+                "ordered": {
+                },
+                "propertyUrl": {
+                },
+                "required": {
+                },
+                "separator": {
+                },
+                "textDirection": {
+                },
+                "titles": {
+                },
+                "valueUrl": {
+                },
+                "virtual": {
+                }
+            },
+            "type": "object"
+        },
+        "DialectDescription": {
+            "additionalProperties": false,
+            "properties": {
+                "@id": {
+                    "type": "string"
+                },
+                "@type": {
+                },
+                "commentPrefix": {
+                },
+                "delimiter": {
+                },
+                "doubleQuote": {
+                },
+                "encoding": {
+                },
+                "header": {
+                },
+                "headerRowCount": {
+                },
+                "lineTerminators": {
+                    "items": {
+                    },
+                    "type": "array"
+                },
+                "quoteChar": {
+                },
+                "skipBlankRows": {
+                },
+                "skipColumns": {
+                },
+                "skipInitialSpace": {
+                },
+                "skipRows": {
+                },
+                "trim": {
+                }
+            },
+            "type": "object"
+        },
+        "ForeignKeyDefinitions": {
+            "additionalProperties": false,
+            "properties": {
+                "columnReference": {
+                },
+                "reference": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "columnReference": {
+                        },
+                        "resource": {
+                            "type": "string"
+                        },
+                        "schemaReference": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        },
+        "Schema": {
+            "additionalProperties": false,
+            "properties": {
+                "@id": {
+                    "type": "string"
+                },
+                "@type": {
+                },
+                "aboutUrl": {
+                },
+                "columns": {
+                    "items": {
+                        "$ref": "#/definitions/ColumnDescription"
+                    },
+                    "type": "array"
+                },
+                "datatype": {
+                },
+                "default": {
+                },
+                "foreignKeys": {
+                    "items": {
+                        "$ref": "#/definitions/ForeignKeyDefinitions"
+                    },
+                    "type": "array"
+                },
+                "lang": {
+                },
+                "null": {
+                },
+                "ordered": {
+                },
+                "primaryKey": {
+                },
+                "propertyUrl": {
+                },
+                "required": {
+                },
+                "rowTitles": {
+                },
+                "separator": {
+                },
+                "textDirection": {
+                },
+                "valueUrl": {
+                }
+            },
+            "type": "object"
+        },
+        "TransformationDefinition": {
+            "additionalProperties": false,
+            "properties": {
+                "@id": {
+                    "type": "string"
+                },
+                "@type": {
+                },
+                "scriptFormat": {
+                    "type": "string"
+                },
+                "source": {
+                    "type": "string"
+                },
+                "targetFormat": {
+                    "type": "string"
+                },
+                "titles": {
+                },
+                "url": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "properties": {
+        "@id": {
+            "type": "string"
+        },
+        "@type": {
+        },
+        "aboutUrl": {
+        },
+        "datatype": {
+        },
+        "default": {
+        },
+        "dialect": {
+            "$ref": "#/definitions/DialectDescription"
+        },
+        "lang": {
+        },
+        "notes": {
+            "items": {
+            },
+            "type": "array"
+        },
+        "null": {
+        },
+        "ordered": {
+        },
+        "propertyUrl": {
+        },
+        "required": {
+        },
+        "separator": {
+        },
+        "suppressOutpu": {
+            "type": "boolean"
+        },
+        "tableDirection": {
+            "enum": [
+                "auto",
+                "ltr",
+                "rtl"
+            ],
+            "type": "string"
+        },
+        "tableSchema": {
+            "$ref": "#/definitions/Schema"
+        },
+        "textDirection": {
+        },
+        "transformations": {
+            "$ref": "#/definitions/TransformationDefinition"
+        },
+        "url": {
+            "type": "string"
+        },
+        "valueUrl": {
+        }
+    },
+    "type": "object"
+}
+
