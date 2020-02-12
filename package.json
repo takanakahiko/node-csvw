@@ -6,7 +6,7 @@
     "test": "mocha -r ts-node/register packages/**/__tests__/**/*.spec.ts"
   },
   "devDependencies": {
-    "@types/chai": "4.2.8",
+    "@types/chai": "4.2.9",
     "@types/node": "13.7.1",
     "chai": "4.2.0",
     "lerna": "3.20.2",
