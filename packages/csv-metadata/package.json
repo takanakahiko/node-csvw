@@ -24,6 +24,6 @@
     "url": "https://github.com/takanakahiko/node-csvw/issues"
   },
   "devDependencies": {
-    "jsonschema": "1.2.5"
+    "jsonschema": "1.2.6"
   }
 }
