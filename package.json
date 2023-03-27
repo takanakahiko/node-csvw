@@ -7,7 +7,7 @@
   },
   "devDependencies": {
     "@types/chai": "4.2.11",
-    "@types/node": "13.13.40",
+    "@types/node": "18.15.10",
     "chai": "4.2.0",
     "lerna": "3.20.2",
     "mocha": "7.1.2",
